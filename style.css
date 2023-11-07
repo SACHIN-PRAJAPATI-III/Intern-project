@@ -1,64 +1,80 @@
-.bg-red
-{
-    background-color: rgb(10, 10, 10);
-    width: fit-content;
-}
-body{
-    background-color:black;
-    margin-top: 60px;
-}
-.container
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-    border-radius: 20px;
-    padding: 2px 0px 10px 0px;
-    width: 350px;
-    background-color: azure;
-}
-.mx-auto
-{
-    margin: auto;
-    
-}
-.row
-{
-  padding: 8px 0px;
-}
-.button
-{
-    width: 55px;
-    padding: 15px;
-    margin: 0 5px;
-    border: 2px solid black;
-    border-radius: 9px;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: -5px -4px 10px red;
-    
+:root {
+  --primary-color: #0b0c0c;
 }
 
-.button:hover
-{
-    background-color:rgb(250, 197, 7, 0.924) ;
+* {
+  box-sizing: border-box;
 }
 
-h1{
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    text-shadow: -8px 2px 8px rgb(248, 244, 3);
+body {
+  background-color: #3f76dd;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
 }
-input
+.imgg{
+  height: 70px;
+  padding: 25px 0px 0px 160px;
+}
+
+
+h1 {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-align: center;
+}
+.arrow
 {
-    font-weight: bold;
-    font-size: medium;
-    margin-bottom: 30px;
-    height: 35px;
-    width: 260px;
-    font-size: 22px;
-    text-align: right;
-    box-shadow: -2px -2px 10px whitesmoke;
+  padding-left: 80px;
+  font-weight: 500;
 }
+
+.convert-container
+{
+  background-color: rgb(241, 239, 237);
+}
+
+.input-container{
+
+}
+
+.convertedAmount,.fromAmount
+{
+  padding: 5px 0px 5px 0px;
+  margin: 10px 15px 10px 10px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.convertedAmount
+{
+  color: black; 
+}
+.to-currency,.from-currency
+{
+  width: 150px;
+  padding: 5px 0px 5px 0px;
+  margin: 10px 15px 10px 10px;
+}
+
+.result
+{ 
+  width: 300px;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(141, 141, 226);
  
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
